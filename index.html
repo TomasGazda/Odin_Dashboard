@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="profile">
+                <div class="profile-nav">
+                        <div class="nav-picture">
+                            <img src="./images/account.png" alt="User" width="40" height="40">
+                        </div>
+                        
+                            <div class="nav-user">
+                                <h6 class="username">Gazda Tomas</h6>
+                            </div>
+                            <div class="nav-username">@gazdatom</div>
+                        
+                        
+                </div>
+            </div>
+            <div class ="menu">
+                <div class="main-menu">
+                    <ul>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586l6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"/></svg>
+                            Home
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2Z"/><path d="M4.271 18.346S6.5 15.5 12 15.5s7.73 2.846 7.73 2.846M12 12a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"/></g></svg>
+                            Profile
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="-2 -2.5 24 24"><rect x="-2" y="-2.5" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" d="M3.656 17.979A1 1 0 0 1 2 17.243V15a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H8.003l-4.347 2.979zm.844-3.093a.536.536 0 0 0 .26-.069l2.355-1.638A1 1 0 0 1 7.686 13H12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v5c0 .54.429.982 1 1c.41.016.707.083.844.226c.128.134.135.36.156.79c.003.063.003.177 0 .37a.5.5 0 0 0 .5.5zm11.5-4.87a7.136 7.136 0 0 0 0 .37v-.37c.02-.43.028-.656.156-.79c.137-.143.434-.21.844-.226c.571-.018 1-.46 1-1V3a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1H5V2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2v2.243a1 1 0 0 1-1.656.736L16 13.743v-3.726z"/></svg>
+                            Messages
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9.372 2.025A8 8 0 1 1 2.005 9.74a.75.75 0 1 1 1.5.045a6.5 6.5 0 1 0 1.573-4.029l-.204.248h2.379l.102.008a.75.75 0 0 1 0 1.486l-.102.007h-4l-.102-.007a.75.75 0 0 1-.641-.641l-.007-.102v-4l.007-.102a.75.75 0 0 1 .641-.641l.102-.007l.102.007a.75.75 0 0 1 .641.641l.007.102l-.001 1.953a7.977 7.977 0 0 1 5.37-2.682Zm.378 3.979l.102.007a.75.75 0 0 1 .641.641l.007.102v3.245l1.75.001l.102.007a.75.75 0 0 1 0 1.487l-.102.006h-2.5l-.102-.006a.75.75 0 0 1-.641-.642L9 10.75V6.754l.007-.102a.75.75 0 0 1 .641-.641l.102-.007Z"/></svg>
+                            History
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M280 752h80c4.4 0 8-3.6 8-8V280c0-4.4-3.6-8-8-8h-80c-4.4 0-8 3.6-8 8v464c0 4.4 3.6 8 8 8zm192-280h80c4.4 0 8-3.6 8-8V280c0-4.4-3.6-8-8-8h-80c-4.4 0-8 3.6-8 8v184c0 4.4 3.6 8 8 8zm192 72h80c4.4 0 8-3.6 8-8V280c0-4.4-3.6-8-8-8h-80c-4.4 0-8 3.6-8 8v256c0 4.4 3.6 8 8 8zm216-432H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"/></svg>
+                            Projects
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><rect x="0" y="0" width="32" height="32" fill="none" stroke="none" /><path fill="currentColor" d="m14 20.18l-3.59-3.59L9 18l5 5l9-9l-1.41-1.42l-7.59 7.6z"/><path fill="currentColor" d="M25 5h-3V4a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v1H7a2 2 0 0 0-2 2v21a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2ZM12 4h8v4h-8Zm13 24H7V7h3v3h12V7h3Z"/></svg>
+                            Tasks
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M6 1a2.75 2.75 0 1 1 0 5.5A2.75 2.75 0 0 1 6 1Zm0 1a1.75 1.75 0 1 0 0 3.5A1.75 1.75 0 0 0 6 2Zm.683 5.5H2.5A1.5 1.5 0 0 0 1 9v.5c0 1.587 1.206 3.212 3.315 3.784c.19-.341.459-.634.781-.853C3.1 12.114 2 10.759 2 9.5V9a.5.5 0 0 1 .5-.5h3.825c.072-.354.194-.69.358-1ZM10 6.5a2.744 2.744 0 0 0-2.646 2a2.752 2.752 0 0 0 2.26 3.473c.184-.356.406-.69.661-.995a1.756 1.756 0 0 1-.984-.128a1.75 1.75 0 1 1 2.376-1.065a5.475 5.475 0 0 1 1.083-.5V9.25a2.753 2.753 0 0 0-.629-1.75c-.504-.61-1.267-1-2.121-1Zm8.677 4.422a5.531 5.531 0 0 0-.78-.748c.068-.223.103-.45.103-.674V9a.5.5 0 0 0-.5-.5h-3.825a3.726 3.726 0 0 0-.357-1H17.5A1.5 1.5 0 0 1 19 9v.5c0 .48-.11.964-.323 1.422ZM9.207 13H6.5A1.496 1.496 0 0 0 5 14.5v.5c0 1.971 1.86 4 5 4c.421 0 .82-.037 1.194-.105a5.535 5.535 0 0 1-.941-.9A6.18 6.18 0 0 1 10 18c-2.568 0-4-1.562-4-3v-.5a.5.5 0 0 1 .5-.5h2.522a5.48 5.48 0 0 1 .185-1Zm7.543-9.25a2.75 2.75 0 1 0-5.5 0a2.75 2.75 0 0 0 5.5 0Zm-4.5 0a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0ZM14.5 19a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9Zm0-7a.5.5 0 0 1 .5.5V14h1.5a.5.5 0 0 1 0 1H15v1.5a.5.5 0 0 1-1 0V15h-1.5a.5.5 0 0 1 0-1H14v-1.5a.5.5 0 0 1 .5-.5Z"/></svg>
+                            Communities
+                        </li>
+                    </ul>
+                </div>
+                <div class="setting-menu">
+                    <ul>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><rect x="0" y="0" width="32" height="32" fill="none" stroke="none" /><path fill="currentColor" d="M30 8h-4.1c-.5-2.3-2.5-4-4.9-4s-4.4 1.7-4.9 4H2v2h14.1c.5 2.3 2.5 4 4.9 4s4.4-1.7 4.9-4H30V8zm-9 4c-1.7 0-3-1.3-3-3s1.3-3 3-3s3 1.3 3 3s-1.3 3-3 3zM2 24h4.1c.5 2.3 2.5 4 4.9 4s4.4-1.7 4.9-4H30v-2H15.9c-.5-2.3-2.5-4-4.9-4s-4.4 1.7-4.9 4H2v2zm9-4c1.7 0 3 1.3 3 3s-1.3 3-3 3s-3-1.3-3-3s1.3-3 3-3z"/></svg>
+                            Setting
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" d="M20 16.246a2.249 2.249 0 0 0-2.25-2.249H6.25A2.249 2.249 0 0 0 4 16.247v.577c0 .893.319 1.756.898 2.435c1.567 1.834 3.953 2.74 7.098 2.74c3.146 0 5.533-.905 7.102-2.739A3.75 3.75 0 0 0 20 16.821v-.575Zm-13.751-.749H17.75c.413 0 .748.335.748.75v.575a2.25 2.25 0 0 1-.54 1.463c-1.257 1.468-3.224 2.213-5.963 2.213c-2.738 0-4.704-.745-5.957-2.213a2.25 2.25 0 0 1-.539-1.461v-.578a.75.75 0 0 1 .749-.749Zm10.748-8.495a5 5 0 0 0-9.025-2.967A.75.75 0 0 0 7.748 4H5.25a.75.75 0 0 0-.75.75v5.498A2.75 2.75 0 0 0 7.25 13h.25v-.004h.01a.998.998 0 1 0-.786-1.611A1.25 1.25 0 0 1 6 10.249V10h.748c.38 0 .733-.122 1.02-.328a5 5 0 0 0 9.229-2.67Zm-10-.106a5.114 5.114 0 0 0 0 .212v1.141a.25.25 0 0 1-.25.25H6V5.501h.998v1.395Zm1.5.195v-.178a3.5 3.5 0 1 1 0 .178Z"/></svg>
+                            Support
+                        </li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" d="m12 3.19l7 3.11V11c0 4.52-2.98 8.69-7 9.93c-4.02-1.24-7-5.41-7-9.93V6.3l7-3.11M12 1L3 5v6c0 5.55 3.84 10.74 9 12c5.16-1.26 9-6.45 9-12V5l-9-4zm-1 6h2v2h-2V7zm0 4h2v6h-2v-6z"/></svg>
+                            Privacy
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header"> 
+            <div class="row1">
+                <div class = "search">
+                    <svg style="width:25px;height:25px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                    </svg>
+                    <form action="#" method="get">
+                        <input type="search" name="search_input" id="search_input" placeholder="Search project">
+                    </form>
+                </div>
+                <div class = "actions" >
+                    <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>New</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" d="M18 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7a.104.104 0 0 1 .027 0h.006a.15.15 0 0 0 .029.006c.088.006.175.023.259.051h.042a.421.421 0 0 1 .052.043a.988.988 0 0 1 .293.2l6 6a.987.987 0 0 1 .2.293a.735.735 0 0 1 .023.066v.028c.028.083.044.17.049.258a.1.1 0 0 0 .007.029v.006c.005.006.01.013.013.02v11a2 2 0 0 1-2 2ZM6 4v16h12V10h-5a1 1 0 0 1-1-1V4H6Zm8 1.414V8h2.586L14 5.414ZM13 18h-2v-2H9v-2h2v-2h2v2h2v2h-2v2Z"/></svg></span>
+                    <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><title>Upload</title><rect x="0" y="0" width="32" height="32" fill="none" stroke="none" /><path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 22c-9 1-8-10 0-9C6 2 23 2 22 10c10-3 10 13 1 12m-12-4l5-4l5 4m-5-4v15"/></svg></span>
+                    <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    <img src="./images/account.png" alt="User" width="25" height="25">
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        <div class="content"> 
+            <div class="main">
+                <div class="card">
+                    <div class="card-head">
+                            <div class="card-picture">
+                                <img src="./images/avatar1.png" alt="User" width="30" height="30">
+                            </div>
+                                    
+                            <div class="card-project">
+                                <h6 class="username">Favourite Project </h6>
+                            </div>
+                            <div class="card-username">@avatar1</div>
+                    
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pellentesque dignissim enim sit amet. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Eget velit aliquet sagittis id consectetur purus ut faucibus. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>Detail</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" fill-rule="evenodd" d="M18 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4ZM6 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm6 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg></span>
+                        <div class="card-actions">
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><title>Like</title><rect x="0" y="0" width="48" height="48" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><title>Download</title><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"/><path fill="currentColor" d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7c-23.5-24.2-36-56.8-34.9-90.6c.9-26.4 9.9-51.2 26.2-72.1c16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9l13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9c15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5l37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                            <div class="card-picture">
+                                <img src="./images/account.png" alt="User" width="30" height="30">
+                            </div>
+                                    
+                            <div class="card-project">
+                                <h6 class="username">Best Project</h6>
+                            </div>
+                            <div class="card-username">@gazdatom</div>
+                    
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pellentesque dignissim enim sit amet. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Eget velit aliquet sagittis id consectetur purus ut faucibus. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>Detail</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" fill-rule="evenodd" d="M18 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4ZM6 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm6 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg></span>
+                        <div class="card-actions">
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><title>Like</title><rect x="0" y="0" width="48" height="48" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><title>Download</title><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"/><path fill="currentColor" d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7c-23.5-24.2-36-56.8-34.9-90.6c.9-26.4 9.9-51.2 26.2-72.1c16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9l13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9c15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5l37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                            <div class="card-picture">
+                                <img src="./images/avatar2.png" alt="User" width="30" height="30">
+                            </div>
+                                    
+                            <div class="card-project">
+                                <h6 class="username">School Project </h6>
+                            </div>
+                            <div class="card-username">@avatar2</div>
+                    
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pellentesque dignissim enim sit amet. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Eget velit aliquet sagittis id consectetur purus ut faucibus. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>Detail</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" fill-rule="evenodd" d="M18 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4ZM6 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm6 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg></span>
+                        <div class="card-actions">
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><title>Like</title><rect x="0" y="0" width="48" height="48" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><title>Download</title><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"/><path fill="currentColor" d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7c-23.5-24.2-36-56.8-34.9-90.6c.9-26.4 9.9-51.2 26.2-72.1c16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9l13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9c15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5l37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                            <div class="card-picture">
+                                <img src="./images/avatar4.png" alt="User" width="30" height="30">
+                            </div>
+                                    
+                            <div class="card-project">
+                                <h6 class="username">Project Chess</h6>
+                            </div>
+                            <div class="card-username">@avatar4</div>
+                    
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pellentesque dignissim enim sit amet. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Eget velit aliquet sagittis id consectetur purus ut faucibus. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>Detail</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" fill-rule="evenodd" d="M18 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4ZM6 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm6 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg></span>
+                        <div class="card-actions">
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><title>Like</title><rect x="0" y="0" width="48" height="48" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><title>Download</title><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"/><path fill="currentColor" d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7c-23.5-24.2-36-56.8-34.9-90.6c.9-26.4 9.9-51.2 26.2-72.1c16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9l13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9c15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5l37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                            <div class="card-picture">
+                                <img src="./images/avatar7.png" alt="User" width="30" height="30">
+                            </div>
+                                    
+                            <div class="card-project">
+                                <h6 class="username">Project Plane</h6>
+                            </div>
+                            <div class="card-username">@avatar7</div>
+                    
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pellentesque dignissim enim sit amet. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Eget velit aliquet sagittis id consectetur purus ut faucibus. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>Detail</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" fill-rule="evenodd" d="M18 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4ZM6 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm6 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg></span>
+                        <div class="card-actions">
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><title>Like</title><rect x="0" y="0" width="48" height="48" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><title>Download</title><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"/><path fill="currentColor" d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7c-23.5-24.2-36-56.8-34.9-90.6c.9-26.4 9.9-51.2 26.2-72.1c16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9l13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9c15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5l37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                            <div class="card-picture">
+                                <img src="./images/avatar5.png" alt="User" width="30" height="30">
+                            </div>
+                                    
+                            <div class="card-project">
+                                <h6 class="username">Landing Page</h6>
+                            </div>
+                            <div class="card-username">@avatar5</div>
+                    
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pellentesque dignissim enim sit amet. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Eget velit aliquet sagittis id consectetur purus ut faucibus. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>Detail</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" fill-rule="evenodd" d="M18 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4ZM6 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm6 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg></span>
+                        <div class="card-actions">
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><title>Like</title><rect x="0" y="0" width="48" height="48" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><title>Download</title><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"/><path fill="currentColor" d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7c-23.5-24.2-36-56.8-34.9-90.6c.9-26.4 9.9-51.2 26.2-72.1c16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9l13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9c15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5l37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                            <div class="card-picture">
+                                <img src="./images/avatar3.png" alt="User" width="30" height="30">
+                            </div>
+                                    
+                            <div class="card-project">
+                                <h6 class="username">Final Project</h6>
+                            </div>
+                            <div class="card-username">@avatar3</div>
+                    
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pellentesque dignissim enim sit amet. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Eget velit aliquet sagittis id consectetur purus ut faucibus. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>Detail</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" fill-rule="evenodd" d="M18 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4ZM6 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm6 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg></span>
+                        <div class="card-actions">
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><title>Like</title><rect x="0" y="0" width="48" height="48" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><title>Download</title><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"/><path fill="currentColor" d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7c-23.5-24.2-36-56.8-34.9-90.6c.9-26.4 9.9-51.2 26.2-72.1c16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9l13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9c15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5l37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                            <div class="card-picture">
+                                <img src="./images/account.png" alt="User" width="30" height="30">
+                            </div>
+                                    
+                            <div class="card-project">
+                                <h6 class="username">Project Numero Uno</h6>
+                            </div>
+                            <div class="card-username">@gazdatom</div>
+                    
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pellentesque dignissim enim sit amet. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Eget velit aliquet sagittis id consectetur purus ut faucibus. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>Detail</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" fill-rule="evenodd" d="M18 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4ZM6 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm6 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg></span>
+                        <div class="card-actions">
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><title>Like</title><rect x="0" y="0" width="48" height="48" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><title>Download</title><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"/><path fill="currentColor" d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7c-23.5-24.2-36-56.8-34.9-90.6c.9-26.4 9.9-51.2 26.2-72.1c16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9l13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9c15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5l37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                            <div class="card-picture">
+                                <img src="./images/avatar3.png" alt="User" width="30" height="30">
+                            </div>
+                                    
+                            <div class="card-project">
+                                <h6 class="username">Least favourite project</h6>
+                            </div>
+                            <div class="card-username">@avatar3</div>
+                    
+                    </div>
+                    <div class="card-body">
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pellentesque dignissim enim sit amet. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Eget velit aliquet sagittis id consectetur purus ut faucibus. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><title>Detail</title><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="currentColor" fill-rule="evenodd" d="M18 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4ZM6 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm6 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/></svg></span>
+                        <div class="card-actions">
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><title>Like</title><rect x="0" y="0" width="48" height="48" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8Z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><title>Download</title><rect x="0" y="0" width="1024" height="1024" fill="none" stroke="none" /><path fill="currentColor" d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"/><path fill="currentColor" d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7c-23.5-24.2-36-56.8-34.9-90.6c.9-26.4 9.9-51.2 26.2-72.1c16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9l13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9c15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5l37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"/></svg></span>
+                            <span class="button-nav"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><title>Share</title><rect x="0" y="0" width="20" height="20" fill="none" stroke="none" /><path fill="currentColor" d="M9 13h2V4h2l-3-4l-3 4h2v9zm8-6h-3v2h2v9H4V9h2V7H3a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/></svg></span>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                
+                <div class="news">
+                    <h6>News</h6>
+                    <div class="news-body">
+                        <ul>
+                            <li> <div class="news-heading">New Project</div>
+                                <div class="news-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                            </li>
+                            <li> <div class="news-heading">User joined</div>
+                                <div class="news-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                            </li>
+                            <li> <div class="news-heading">New Article</div>
+                                <div class="news-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                            </li>
+                            <li> <div class="news-heading">New Function</div>
+                                <div class="news-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                            </li>
+                            <li> <div class="news-heading"> Friend Request</div>
+                                <div class="news-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                            </li>
+                            <li> <div class="news-heading">Security message</div>
+                                <div class="news-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                            </li>
+                            <li> <div class="news-heading">Friend Added</div>
+                                <div class="news-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="trending">
+                    <h6>Favourite users</h6>
+                    <div class="trending-body">
+                        <ul>
+                            <li> 
+                                <div class="profile-nav">
+                                <div class="nav-picture">
+                                    <img src="./images/avatar1.png" alt="User" width="30px" height="30px">
+                                </div>
+                                
+                                    <div class="nav-user">
+                                        <h6 class="username">Avatar One</h6>
+                                    </div>
+                                    <div class="nav-username">@avatar1</div>
+                                
+                                
+                                 </div>
+                             </li>
+                             <li> 
+                                <div class="profile-nav">
+                                <div class="nav-picture">
+                                    <img src="./images/avatar2.png" alt="User" width="30px" height="30px">
+                                </div>
+                                
+                                    <div class="nav-user">
+                                        <h6 class="username">Avatar Two</h6>
+                                    </div>
+                                    <div class="nav-username">@avatar2</div>
+                                
+                                
+                                 </div>
+                             </li>
+                             <li> 
+                                <div class="profile-nav">
+                                <div class="nav-picture">
+                                    <img src="./images/avatar3.png" alt="User" width="30px" height="30px">
+                                </div>
+                                
+                                    <div class="nav-user">
+                                        <h6 class="username">Avatar Three</h6>
+                                    </div>
+                                    <div class="nav-username">@avatar3</div>
+                                
+                                
+                                 </div>
+                             </li>
+                             <li> 
+                                <div class="profile-nav">
+                                <div class="nav-picture">
+                                    <img src="./images/avatar4.png" alt="User" width="30px" height="30px">
+                                </div>
+                                
+                                    <div class="nav-user">
+                                        <h6 class="username">Avatar Four</h6>
+                                    </div>
+                                    <div class="nav-username">@avatar4</div>
+                                
+                                
+                                 </div>
+                             </li>
+                             <li> 
+                                <div class="profile-nav">
+                                <div class="nav-picture">
+                                    <img src="./images/avatar6.png" alt="User" width="30px" height="30px">
+                                </div>
+                                
+                                    <div class="nav-user">
+                                        <h6 class="username">Avatar Six</h6>
+                                    </div>
+                                    <div class="nav-username">@avatar6</div>
+                                
+                                
+                                 </div>
+                             </li>
+                        </ul>
+                    </div>
+                        
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

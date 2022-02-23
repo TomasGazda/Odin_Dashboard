@@ -74,6 +74,7 @@ body{
     display: grid;
     grid-template-rows: 2fr 2fr 12fr;
     overflow-y: auto;
+    min-width: 175px;
     
 
 }
@@ -701,14 +702,16 @@ li{
 
 
 }
-
-@media only screen and (max-heigh: 1050px) {
+@media only screen and (min-width: 1050px) and (max-width: 1350px) {
+    .news{  
+        width: 85%;
+    }
+    .trending{
+        width: 85%;
+    }
     .main-menu,.setting-menu{
         
-        margin-bottom: 20px;
-        width: 80%;
-    
-    
+        width: 85%;
     }
 
 
